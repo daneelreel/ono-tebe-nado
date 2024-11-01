@@ -11,8 +11,8 @@ address {
     display: grid;
     place-items: center;
     gap: 20px;
-    grid-template-columns: 480px 100px 500px; /* Задаем три колонки с минимальной и максимальной шириной */
-    height: 29vh;
+    grid-template-columns: 480px 100px 472px; /* Задаем три колонки с минимальной и максимальной шириной */
+    height: 28vh;
 }
 
 .header__links-list {
@@ -21,6 +21,7 @@ address {
     grid-auto-flow: column; /* Располагаем элементы по горизонтали */
     gap: 30px;
     list-style: none;
+    margin-top: -25px;
 }
 
 .header__links-list-item {
@@ -44,6 +45,7 @@ address {
     grid-column: 2; /* Помещаем логотип во вторую колонку */
     gap: 20px;
     padding-right: 7px;
+    margin-top: -30px;
     width: 137px;
 }
 
@@ -52,7 +54,8 @@ address {
 }
 
 .header__address {
-    margin: 0 auto;
+    margin-top: -30px;
+    margin-right: -35px;
     font-family: Raleway, sans-serif;
     display: grid;
     grid-column: 3; /* Помещаем контактную информацию в третью колонку */
@@ -97,14 +100,14 @@ address {
 }
 
 .aligned-text {
-    letter-spacing: 20px;
+    letter-spacing: 27px;
     display: block;
     line-height: 115%;
 }
 
 .letter-spacing-extended {
-    align-items: center;
-    letter-spacing: 60px;
+    align-items: left;
+    letter-spacing: 50px;
 }
 
 .no-letter-spacing {
@@ -112,7 +115,7 @@ address {
 }
 
 .no-letter-spacing-extended {
-    letter-spacing: 0px;
+    letter-spacing: -5px;
 }
 
 .aligned-text_center {
@@ -137,7 +140,7 @@ address {
 .cover__description-text {
     color: #fff;
     position: relative;
-    top: 141px;
+    top: 143px;
     left: 28px;
     font-size: 22px;
     word-spacing: 18px;
@@ -149,7 +152,7 @@ address {
     width: 256px;
     height: 51px;
     position: relative;
-    inset: 100px 740px;
+    inset: 105px 742px;
 }
 
 .lots {
@@ -164,7 +167,7 @@ address {
 .lots__heading {
     text-transform: uppercase;
     line-height: 46.96px;
-    padding: 0 0 27px 40px;
+    padding: 0 0 30px 40px;
     font-size: 40px;
 }
 
@@ -174,7 +177,7 @@ address {
     flex-wrap: wrap;
     list-style: none;
     position: relative;
-    gap: 17px;
+    gap: 25px;
 }
 
 .lots__card-list-item {
@@ -186,8 +189,7 @@ address {
     font-size: 20px;
     color: #000000;
     z-index: 1;
-    margin: 28px 0 40px 40px;
-    
+    margin: 32px 0 40px 40px;
 }
 
 .card-link {
@@ -226,7 +228,7 @@ address {
     color: #fff;
     z-index: 1;
     width: 295px;
-    padding: 0 0 53px 42px;
+    padding: 0 0 47px 42px;
 }
 
 .card_type_film {
@@ -251,6 +253,7 @@ address {
 }
 
 .about__logo {
+    margin-top: 10px;
     height: 240px;
     width: 240px;
     grid-column: 1 / 2;
@@ -275,12 +278,12 @@ address {
     color: #000000;
     font-weight: 700;
     font-size: 40px;
-    padding-top: 105px;
+    padding-top: 109px;
     margin-left: -5px;
 }
 
 .about__text {
-    margin-left: -5px;
+    margin-left: -2px;
     padding-top: 100px;
     font-weight: 400;
     font-size: 20px;
@@ -296,10 +299,10 @@ address {
 
 .footer {
     display: flex;
-    width: 1200px;
+    width: 1100px;
     height: 98px;
     padding-top: 320px;
-    margin-bottom: 200px;
+    margin-bottom: 120px;
 }
 
 .footer__address {
@@ -308,7 +311,8 @@ address {
     display: grid;
     justify-content: start; /* Выравниваем текст по левому краю */ 
     width: 400px;
-    padding-left: 10px;
+    padding-left: 11px;
+    margin-top: -7px;
     list-style: none;
     color: #000000;
     font-size: 18px;
@@ -320,7 +324,8 @@ address {
     flex-direction: column;
     list-style: none;  
     place-items: center;
-    margin-right: 187px; 
+    margin-right: 186px; 
+    margin-top: -7px;
     color: #000000;
     font-size: 18px;
     line-height: 1.25;
@@ -334,7 +339,9 @@ address {
     list-style: none;
     width: 240px;
     height: 10px;
-    margin-right: 155px; 
+    margin-right: 51px; 
+    margin-top: -7px; 
+}
 }
 
 .footer__menu-link_active{
