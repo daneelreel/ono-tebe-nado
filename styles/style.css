@@ -1,33 +1,24 @@
-address {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
 .header {
     display: grid;
     place-items: center;
     gap: 20px;
     grid-template-columns: 480px 100px 472px; /* Задаем три колонки с минимальной и максимальной шириной */
-    height: 27vh;
+    min-height: 105px;
+    margin: 92px 0 96px 0;
 }
 
 .header__links-list {
     display: grid; /* Используем grid для списка ссылок */
     grid-column: 1; /* Помещаем меню в первую колонку */
     grid-auto-flow: column; /* Располагаем элементы по горизонтали */
-    gap: 33px;
+    gap: 36px;
     list-style: none;
-    margin-top: -29px;
-    margin-left: 1px;
+    margin-top: 2px;
+    margin-left: 14px;
 }
 
 .header__links-list-item {
     list-style: circle;
-    
 }
 
 .header__link {
@@ -41,13 +32,10 @@ address {
     margin-left: 10px;
 }
 
-
 .header__logo {
     display: grid;
     grid-column: 2; /* Помещаем логотип во вторую колонку */
     gap: 20px;
-    padding-right: -9px;
-    margin-top: -40px;
     width: 138px;
 }
 
@@ -56,25 +44,22 @@ address {
 }
 
 .header__address {
-    margin-top: -39px;
-    margin-right: -39px;
     font-family: Raleway, sans-serif;
     display: grid;
     grid-column: 3; /* Помещаем контактную информацию в третью колонку */
     justify-content: start; /* Выравниваем текст по левому краю */ 
-    gap: 0px;
-    width: 290px;
-    padding-left: 80px;
+    gap: 0;
+    width: 320px;
+    padding-left: 116px;
     list-style: none;
     color: #000000;
     font-size: 18px;
     line-height: 1.35;
-    
 }
 
 .cover {
     width: 1100px;
-    height: 757px;
+    min-height: 757px;
     padding: 165px 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -96,68 +81,62 @@ address {
 
 .cover__title {
     color: #fff;
-    font-family: "Raleway", bold;
+    font-family: Raleway, sans-serif;
     font-size: 100px;
     text-transform: uppercase;
     position: relative;
 }
 
 .aligned-text {
-    letter-spacing: 23.5px;
     display: block;
+    text-align: left;
     line-height: 115%;
+    letter-spacing: 30px;
 }
 
 .letter-spacing-extended {
-    letter-spacing: 80px;
+    letter-spacing: 60px;
 }
 
 .no-letter-spacing {
-    letter-spacing: -26px;
-}
-
-.no-letter-spacing-extended {
-    letter-spacing: 4px;
+    letter-spacing: 0px;
 }
 
 .aligned-text_center {
     display: block;
     text-align: center;
     line-height: 135%;
-    letter-spacing: 28px;
-    margin-left: 25px;
+    letter-spacing: 30px;
 }
 
 .aligned-text_right {
     display: block; 
-    text-align: right;
-    letter-spacing: 30px;
+    text-align: end;
     line-height: 108%;
-}
-
-.cover__description {
-    color: #fff;
-    font-size: 22px;
-    font-family: "Raleway", medium;
-    line-height: 70%;
+    letter-spacing: 30px;
 }
 
 .cover__description-text {
     color: #fff;
     position: relative;
-    top: 149px;
+    top: 145px;
     left: 28px;
     font-size: 22px;
     word-spacing: 18.6px;
+    height: 18px;
 }
 
 .betbum-button {
+    color: #fff;
+    font-size: 22px;
+    font-family: Raleway, sans-serif;
+    line-height: 70%;
     border: 1px solid #fff;
     background-color: transparent;
     width: 256px;
     height: 51px;
     position: relative;
-    inset: 111px 744px;
+    inset: 112px 744px;
 }
 
 .lots {
@@ -165,14 +144,13 @@ address {
     flex-direction: column;
     justify-content: center;
     width: 1052px;
-    height: 692px;
-    margin: 199px 25px 0 25px;
+    margin: 179px 25px 0 25px;
 }
 
 .lots__heading {
     text-transform: uppercase;
     line-height: 46.96px;
-    padding: 0 0 31px 40px;
+    padding: 0 0 27px 40px;
     font-size: 40px;
 }
 
@@ -187,14 +165,13 @@ address {
 
 .lots__card-list-item {
     flex-grow: 1;
-    
 }
 
 .lots__look-more-link {
     font-size: 20px;
     color: #000000;
     z-index: 1;
-    margin: 32px 0 40px 40px;
+    margin: 30px 0 40px 40px;
 }
 
 .card-link {
@@ -210,7 +187,7 @@ address {
     justify-content: space-between;
     position: relative;
     width: 334px;
-    height: 563px;
+    min-height: 563px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -218,10 +195,9 @@ address {
 
 .card__title {
     font-size: 22px;
-    padding: 49px;
-    margin-left: -10px;
-    width: 360px;
-    height: 82px;
+    padding: 51px 40px 0 40px;
+    width: 340px;
+    min-height: 82px;
     text-transform: uppercase;
     text-decoration: underline;
     color: #fff;
@@ -232,8 +208,8 @@ address {
     font-size: 20px;
     color: #fff;
     z-index: 1;
-    width: 295px;
-    padding: 0 0 51px 39px;
+    width: 254px;
+    margin: 0 40px 48px 40px;
 }
 
 .card_type_film {
@@ -251,9 +227,8 @@ address {
 .about {
     display: grid;
     grid-template-columns: 334px 1fr;
-    grid-template-rows: 240px auto;
     column-gap: 25px;
-    margin: 146px 24px 185px 24px;
+    margin: 127px 24px 180px 24px;
     padding-top: 10px;
 }
 
@@ -288,13 +263,13 @@ address {
 }
 
 .about__text {
-    margin-left: -1px;
+    margin-left: 1px;
     padding-top: 100px;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     width: 693px;
-    height: 312px;
+    min-height: 312px;
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -305,23 +280,22 @@ address {
 .footer {
     display: flex;
     width: 1100px;
-    height: 98px;
-    padding-top: 320px;
-    margin-bottom: 175px;
+    min-height: 98px;
+    margin-bottom: 88px;
 }
 
-.footer__address {
-    margin: 0 auto;
+.address {
     font-family: Raleway, sans-serif;
     display: grid;
+    grid-column: 3; /* Помещаем контактную информацию в третью колонку */
     justify-content: start; /* Выравниваем текст по левому краю */ 
-    width: 400px;
-    padding-left: 12px;
-    margin-top: -6px;
+    gap: 0;
+    width: 260px;
+    padding-left: 52px;
     list-style: none;
     color: #000000;
     font-size: 18px;
-    line-height: 1.37;
+    line-height: 1.35;
 }
 
 .footer__menu-list {
@@ -329,11 +303,10 @@ address {
     flex-direction: column;
     list-style: none;  
     place-items: center;
-    margin-right: 185px; 
-    margin-top: -5px;
+    margin-left: 218px; 
     color: #000000;
     font-size: 18px;
-    line-height: 1.25;
+    line-height: 1.18;
 }
 
 .footer__social-list {
@@ -343,9 +316,8 @@ address {
     gap: 48px;
     list-style: none;
     width: 240px;
-    height: 10px;
-    margin-right: 50px; 
-    margin-top: -6px; 
+    min-height: 10px;
+    margin-left: 186px; 
 }
 
 .footer__menu-link_active{
