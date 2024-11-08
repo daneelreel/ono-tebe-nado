@@ -43,16 +43,19 @@
     width: 100%;
 }
 
-.header__address {
+.address {
     font-family: Raleway, sans-serif;
     display: grid;
     grid-column: 3; /* Помещаем контактную информацию в третью колонку */
     justify-content: start; /* Выравниваем текст по левому краю */ 
     gap: 0;
-    width: 320px;
-    padding-left: 116px;
     list-style: none;
     color: #000000;
+}
+
+.header__address {
+    width: 320px;
+    padding-left: 113px;
     font-size: 18px;
     line-height: 1.35;
 }
@@ -60,7 +63,7 @@
 .cover {
     width: 1100px;
     min-height: 757px;
-    padding: 165px 50px;
+    padding: 165px 50px 0 50px;
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -119,11 +122,12 @@
 .cover__description-text {
     color: #fff;
     position: relative;
-    top: 145px;
-    left: 28px;
     font-size: 22px;
     word-spacing: 18.6px;
-    height: 18px;
+    width: 680px;
+    height: 28px;
+    padding-top: 145px;
+    padding-left: 25px;
 }
 
 .betbum-button {
@@ -136,7 +140,7 @@
     width: 256px;
     height: 51px;
     position: relative;
-    inset: 112px 744px;
+    inset: -15px 743px;
 }
 
 .lots {
@@ -284,16 +288,9 @@
     margin-bottom: 88px;
 }
 
-.address {
-    font-family: Raleway, sans-serif;
-    display: grid;
-    grid-column: 3; /* Помещаем контактную информацию в третью колонку */
-    justify-content: start; /* Выравниваем текст по левому краю */ 
-    gap: 0;
+.footer__address {
     width: 260px;
-    padding-left: 52px;
-    list-style: none;
-    color: #000000;
+    padding-left: 50px;
     font-size: 18px;
     line-height: 1.35;
 }
